@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Popup</title>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800;900&display=swap">  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="height: 90vh" class="d-flex mt-4 justify-content-center align-items-center">
+    <div class="container">
+    <h1 class="display-1 text-danger mb-4">Modal Popup</h1>
+        <p>Lorem ipsum dolor sit ametvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhadipiscivarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhmassa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhamcorper massa eu, suscipit urna. Nunc dui ipsumvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, varius a mauris in, vehicula tempor nibhng elit. Nam varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhunc dui ipsum, varius a mauris in, vehicula tempor nibh.</p>
+        <p>Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhadipiscivarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhmassa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhamcorper massa eu, suscipit urna. Nunc dui ipsumvarius nunc dolor, eget cursus metus consequat vel. </p>    
+    
+    <div class="text-center">    
+      <button class="btn btn-danger" id="btnModal">Popup the Modal</button>
+    </div>
+
+    <div class="overlay">
+    	<div class="popup-content">
+    		<a href="#" class="btnClose">X</a>
+        <p>Lorem ipsum dolor sit ametvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel.</p>
+    	</div>
+    </div>
+  </div>
+</div>
+  <script>
+  	btnModal = document.querySelector("#btnModal");
+  	overlay = document.querySelector(".overlay");
+  	btnClose = document.querySelector(".btnClose")
+  	btnModal.addEventListener('click', function(){
+  		overlay.classList.add("openModal");
+  	})
+
+  	btnClose.addEventListener('click', function(){
+  		overlay.classList.remove("openModal");
+  	})
+  </script>
+</body>
+</html>
