@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Modal Popup</title>  
+  <meta charset="UTF-8">    
+  <title>Javascript: Modal Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800;900&display=swap">  
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Custom CSS Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div style="height: 90vh" class="d-flex mt-4 justify-content-center align-items-center">
     <div class="container">
-    <h1 class="display-1 text-danger mb-4">Modal Popup</h1>
-        <p>Lorem ipsum dolor sit ametvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhadipiscivarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhmassa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhamcorper massa eu, suscipit urna. Nunc dui ipsumvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, varius a mauris in, vehicula tempor nibhng elit. Nam varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhunc dui ipsum, varius a mauris in, vehicula tempor nibh.</p>
-        <p>Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhadipiscivarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhmassa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhamcorper massa eu, suscipit urna. Nunc dui ipsumvarius nunc dolor, eget cursus metus consequat vel. </p>    
+    <h1 class="display-3 text-danger">Modal Popup</h1>
+    <p class="lead">Click the button to see the modal popup 🙂!</p>
+        <p>Lorem ipsum dolor sit ametvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhadipiscivarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhmassa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhamcorper massa eu, suscipit urna. Nunc dui ipsumvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, varius a mauris in, vehicula tempor nibhng elit. Nam varius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibhunc dui ipsum, varius a mauris in, vehicula tempor nibh.</p>         
     
     <div class="text-center">    
       <button class="btn btn-danger" id="btnModal">Popup the Modal</button>
@@ -20,23 +31,13 @@
 
     <div class="overlay">
     	<div class="popup-content">
-    		<a href="#" class="btnClose">X</a>
+    		<a href="#" class="btnClose"><i class="fas fa-times"></i></a>
         <p>Lorem ipsum dolor sit ametvarius nunc dolor, eget cursus metus consequat vel. Cras nec ante scelerisque, ullamcorper massa eu, suscipit urna. Nunc dui ipsum, varius a mauris in, vehicula tempor nibh, consectetur varius nunc dolor, eget cursus metus consequat vel.</p>
+        <p class="text-danger"><b>Click on the Close Button to close this window.</b></p>
     	</div>
     </div>
   </div>
 </div>
-  <script>
-  	btnModal = document.querySelector("#btnModal");
-  	overlay = document.querySelector(".overlay");
-  	btnClose = document.querySelector(".btnClose")
-  	btnModal.addEventListener('click', function(){
-  		overlay.classList.add("openModal");
-  	})
-
-  	btnClose.addEventListener('click', function(){
-  		overlay.classList.remove("openModal");
-  	})
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
